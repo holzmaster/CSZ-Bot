@@ -27,7 +27,7 @@ export class BanListCommand implements ApplicationCommand {
             if (user === undefined) {
                 return "";
             }
-            const untilString = `Bis ${b.bannedUntil === null ? "auf weiteres" : time(b.bannedUntil, TimestampStyles.RelativeTime)}`;
+            const untilString = `Bis ${b.bannedUntil === null ? "auf Weiteres" : time(b.bannedUntil, TimestampStyles.RelativeTime)}`;
             const reasonString = b.reason === null ? "" : `(Grund: ${b.reason})`;
             return `${user}: ${untilString} ${reasonString}`;
         }).filter(s => s.length > 0).join("\n");
