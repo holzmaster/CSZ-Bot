@@ -85,6 +85,7 @@ export class PenisCommand implements MessageCommand {
         "pimmelchen",
         "pfahl",
         "cocka",
+        "balls",
         "yarak"
     ];
     description = "Zeigt dir die Schwanzlänge eines Nutzers an.";
